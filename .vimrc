@@ -33,18 +33,20 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-
+execute pathogen#infect()
+syntax on
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set autoindent
+set cursorline
 set smartindent
+set number
 
 inoremap <C-e> <Esc>$a
 inoremap <C-a> <Esc>^a
 noremap <C-e> <Esc>$a
 noremap <C-a> <Esc>^a
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
-
 
